@@ -1,0 +1,38 @@
+
+---
+
+## 📁 **FILE 8: .github/workflows/build-apk.yml**
+
+**Filename:** `.github/workflows/build-apk.yml`
+
+**Content:**
+```yaml
+name: Build AppForge APK
+
+on:
+  push:
+    branches: [main, develop]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.13.0'
+          channel: 'stable'
+      
+      - name: Build Status
+        run: echo "AppForge build workflow configured"
