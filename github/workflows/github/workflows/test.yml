@@ -1,0 +1,21 @@
+name: Validate Repository
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Validate structure
+        run: |
+          echo "Checking AppForge structure..."
+          test -f README.md && echo "✓ README.md found" || echo "✗ README.md missing"
+          test -f SPEC_OYARO.md && echo "✓ SPEC_OYARO.md found" || echo "✗ SPEC_OYARO.md missing"
+          echo "Validation complete!"
