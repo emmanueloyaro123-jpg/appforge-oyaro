@@ -1,0 +1,84 @@
+# AppForge by OYARO 🚀
+
+**No-code Android App Builder - Create Native Apps Without Coding**
+
+AppForge by OYARO is an offline-first mobile application that allows anyone to create real, installable Android apps using plain English descriptions. No coding required, no internet needed after setup.
+
+## ✨ Key Features
+
+### 🎯 Core Capabilities
+- **Natural Language App Generation** - Describe your app idea in plain English, AI generates the code
+- **Real Native APKs** - Builds genuine, installable Android apps that appear in your launcher
+- **Mostly Offline** - Only AI code generation needs internet; everything else runs locally
+- **60+ Pre-built Demos** - Sample apps showcasing native Android features
+- **Instant Prototyping** - Perfect for quick tools, games, dashboards, and utilities
+
+### 📱 Hardware Access
+
+**37+ Native Bridges** including:
+- 📷 Camera (photo & video)
+- 📍 GPS and Location Services
+- 🎵 Audio (playback & recording)
+- 🔔 Notifications
+- 📱 SMS & Phone Calls
+- 📧 Contacts & Calendar
+- 🌐 WiFi & Bluetooth
+- 💾 File Storage
+- 🎮 Sensors (accelerometer, gyroscope, etc.)
+- 🏷️ NFC Tags
+- And 25+ more features...
+
+### 🤖 AI Integration
+
+Supports multiple AI providers:
+- Anthropic Claude
+- OpenAI GPT-4
+- Google Gemini
+- OpenRouter
+- Local LLMs
+
+### 💾 Offline Features
+- App generation happens on your device
+- No cloud storage required
+- All apps stored locally
+- Complete privacy
+
+## 📥 Download & Install
+
+### Current Version: v1.0.0
+
+**Download AppForge by OYARO APK:**
+
+📱 [Download Latest Release](https://github.com/emmanueloyaro123-jpg/appforge-oyaro/releases)
+
+**Installation Steps:**
+1. Enable "Install from Unknown Sources" in Settings → Security
+2. Download the APK from releases
+3. Open and tap "Install"
+4. Launch AppForge
+5. Grant requested permissions
+6. Start creating apps!
+
+## 🔧 Build From Source
+
+### Prerequisites
+- Java 11 or higher
+- Android SDK (API 31+)
+- Flutter 3.13.0+
+- Gradle 7.0+
+- 10GB free disk space
+
+### Quick Build
+
+```bash
+# Clone the repository
+git clone https://github.com/emmanueloyaro123-jpg/appforge-oyaro.git
+cd appforge-oyaro
+
+# Make build script executable
+chmod +x build.sh
+
+# Run the build
+./build.sh
+
+# Output: bin/AppForge-by-OYARO.apk
